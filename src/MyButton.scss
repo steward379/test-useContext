@@ -1,0 +1,58 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.primary {
+    @extend .button;
+    color: #fff;
+    background-color: #005eff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 94, 255, 0.4);
+}
+
+.secondary {
+    @extend .button;
+    color: #005eff;
+    background-color: transparent;
+    border: 2px solid #005eff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 94, 255, 0.1);
+    }
+
+.danger {
+    @extend .button;
+    color: #fff;
+    background-color: #ff2d2d;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 45, 45, 0.4);
+}
+
+.my-button {
+border: none;
+background-color: transparent;
+font-size: 1rem;
+font-weight: 500;
+text-transform: uppercase;
+cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.primary {
+        @extend .primary;
+    }
+
+    &.secondary {
+        @extend .secondary;
+    }
+
+    &.danger {
+        @extend .danger;
+    }
+}
