@@ -1,7 +1,5 @@
 import {createContext} from "react";
 
-const LanguageContext = createContext({important:"重要",
-    text: "文字",
-    add:"新增"});
+const LanguageContext = createContext(null);
     
 export default LanguageContext;

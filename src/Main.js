@@ -1,21 +1,13 @@
 import "./Main.scss";
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
 import Countdown from "./components/Countdown.js";
 import ToDoList from "./components/ToDoList.js";
 import ProductList from "./components/ProductList.js";
 import ThemeContext from "./context/ThemeContext.js";
 // let main = React.createElement("div", { className: "main"}, "Hello world!");
 
-let uc1 = useContext
-
-console.log(useContext, 'useContext')
-
 function Main(props) {
-    console.log(uc1 === useContext, 'uc1 === useContext')
-    console.log(useContext, 'useContext')
-
     let theme = useContext(ThemeContext);
-
     let feature;
     
     if(props.pageName === "home"){

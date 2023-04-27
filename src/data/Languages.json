@@ -1,0 +1,12 @@
+{
+    "Chinese" : {
+        "important":"💥重要",
+        "text": "💥文字",
+        "add":"💥新增"
+    },
+    "English" : {
+        "important":"💥Important",
+        "text": "💥Text",
+        "add":"💥Add"
+    }
+}

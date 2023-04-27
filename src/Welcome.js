@@ -3,7 +3,7 @@ import React, { useContext, useState } from "react";
 import ThemeContext  from "./context/ThemeContext";
 // let welcome = React.createElement("div", { className: "welcome"}, "Welcome");
 function welcome(props){
-    let theme = useContext =useState(ThemeContext);
+    let theme = useContext(ThemeContext);
     let [text, setText] = useState("Welcome");
 
     let changeText = function(){

@@ -1,10 +1,11 @@
 import "./Nav.scss";
 import React, {useState} from "react";
+import Languages from "./data/Languages.json";
 
 function Nav(props){ 
     const [menuVisible, setMenuVisible] = useState(false);
     let [dark, setDark] = useState(false);
-    let [ eng, setEng] = useState(false);
+    let [eng, setEng] = useState(false);
 
     let changeDark = () => {
         dark = !dark;
@@ -13,8 +14,8 @@ function Nav(props){
     };
     let changeEng = () => {
         eng = !eng;
-        setDark(eng);
-        props.setWords(eng?props.English:props.Chinese);
+        setEng(eng);
+        props.setWords(eng?Languages.English : Languages.Chinese);
     };
     const handleTriggerClick = () => {
       setMenuVisible(!menuVisible);
